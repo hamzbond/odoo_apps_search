@@ -10,6 +10,7 @@
     """,
     'author': 'Hamzbond',
     'website': 'https://hamzbond.github.io',
+    'support': 'hamzbond@gmail.com',
     'category': 'Tools',
     'license': 'LGPL-3',
     'depends': ['base'],
