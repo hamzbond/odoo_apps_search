@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="view_module_filter_inherit" model="ir.ui.view">
+            <field name="name">view.module.filter.inherit</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.view_module_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="author"/>
+                    <field name="website"/>
+                </xpath>
+                <xpath expr="//filter[@name='not_installed']" position="after">
+                    <filter string="Demo data included" name="demo" domain="[('demo','=',True)]"/>
+                </xpath>
+                <xpath expr="//filter[@name='state']" position="after">
+                    <filter string="Author" name="author" domain="[]" context="{'group_by':'author'}"/>
+                    <filter string="Website" name="website" domain="[]" context="{'group_by':'website'}"/>
+                    <filter string="Category" name="category_id" domain="[]" context="{'group_by':'category_id'}"/>
+                    <filter string="License" name="license" domain="[]" context="{'group_by':'license'}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
