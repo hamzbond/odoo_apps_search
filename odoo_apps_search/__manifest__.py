@@ -1,6 +1,6 @@
 {
     'name': 'Odoo Apps Search Enhancements',
-    'version': '18.0.1.0.0',
+    'version': '17.0.1.0.0',
     'summary': 'Enhancements for searching and filtering apps in Odoo',
     'description': """
         This module adds the following features to the Odoo Apps menu:
